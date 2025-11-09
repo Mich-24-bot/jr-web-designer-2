@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | Men’s Wear</title>
+
+  <!-- Font Awesome for Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-RXf+QSDCUQs6JVE9p2kE3bTLLdBe1i0S8U0Z9E2+M5Xv5n7vX8HkbyT3y1gUvlvAp9i8+FJlwHcV8l3QX2/jQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/css/pages/1.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Home</a> |
+    <a href="shop.html" class="active"><i class="fa-solid fa-shirt"></i> Shop</a> |
+    <a href="about.html"><i class="fa-solid fa-user-tie"></i> About</a> |
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a> |
+    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+  </nav>
+
+  <!-- Shop Section -->
+  <section id="shop">
+    <h2><i class="fa-solid fa-bag-shopping"></i> Shop Our Products</h2>
+
+    <div class="product-card">
+      <img src="src/assets/img/img1.jpeg" alt="Shirt">
+      <h5>Men's Shirt</h5>
+      <p class="price">$40</p>
+      <button class="btn-add-cart" data-name="Men's Shirt" data-price="40">
+        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+      </button>
+    </div>
+
+    <div class="product-card">
+      <img src="src/assets/img/img2.jpeg" alt="Pants">
+      <h5>Men's Pants</h5>
+      <p class="price">$60</p>
+      <button class="btn-add-cart" data-name="Men's Pants" data-price="60">
+        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+      </button>
+    </div>
+
+    <div class="product-card">
+      <img src="src/assets/img/img3.jpeg" alt="Suit">
+      <h5>Men's Suit</h5>
+      <p class="price">$120</p>
+      <button class="btn-add-cart" data-name="Men's Suit" data-price="120">
+        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+      </button>
+    </div>
+
+    <div class="product-card">
+      <img src="src/assets/img/suit.jpeg" alt="Jacket">
+      <h5>Men's Jacket</h5>
+      <p class="price">$80</p>
+      <button class="btn-add-cart" data-name="Men's Jacket" data-price="80">
+        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Men’s Wear | Designed with <i class="fa-solid fa-heart"></i> for timeless fashion</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="src/js/pages/jquery.js"></script>
+  <script src="src/js/pages/pages.js"></script>
+</body>
+</html>

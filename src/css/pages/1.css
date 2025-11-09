@@ -1,0 +1,362 @@
+/* ==========================================
+   GLOBAL STYLES
+   ========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   NAVBAR
+   ========================================== */
+.navbar {
+  background-color: #000;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.navbar a {
+  color: #fff !important;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease, transform 0.2s;
+}
+
+.navbar a i {
+  margin-right: 6px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #f8c146 !important;
+  transform: scale(1.05);
+}
+
+/* ==========================================
+   HERO SECTION (HOME PAGE)
+   ========================================== */
+#hero {
+  background: linear-gradient(to right, #111, #333);
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  animation: fadeInDown 2s ease-in-out;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ==========================================
+   SHOP PAGE
+   ========================================== */
+#shop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 80px 40px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+#shop h2 {
+  grid-column: 1 / -1;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+}
+
+#shop h2 i {
+  color: #f8c146;
+  margin-right: 10px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-card h5 {
+  font-weight: 600;
+  margin: 10px 0 5px;
+}
+
+.price {
+  font-size: 1.1rem;
+  color: #f8c146;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.btn-add-cart {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.btn-add-cart i {
+  margin-right: 6px;
+}
+
+.btn-add-cart:hover {
+  background-color: #f8c146;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* ==========================================
+   ABOUT PAGE
+   ========================================== */
+#about {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#about img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* ==========================================
+   CONTACT PAGE
+   ========================================== */
+#contact {
+  padding: 100px 20px;
+}
+
+#contact form {
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}
+
+#contact input,
+#contact textarea {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+#contact button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contact button:hover {
+  background-color: #f8c146;
+  color: #000;
+}
+
+/* ==========================================
+   CART PAGE
+   ========================================== */
+#cart {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#cart h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+#cart-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.remove-item {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove-item:hover {
+  background-color: #cc0000;
+}
+
+#clear-cart {
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#clear-cart:hover {
+  background-color: #f8c146;
+  color: #000;
+}
+
+#cart-total {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+
+footer i {
+  color: #f8c146;
+  margin: 0 4px;
+}
+
+/* ==========================================
+   IMAGE ANIMATIONS
+   ========================================== */
+img {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================
+   ANIMATIONS
+   ========================================== */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .product-card img {
+    height: 200px;
+  }
+
+  .cart-item {
+    width: 95%;
+  }
+
+  .navbar a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  #shop {
+    padding: 60px 20px;
+  }
+}
+
+/* Toast Notification */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 9999;
+}
